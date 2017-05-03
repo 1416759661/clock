@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+//	  var s1 = prompt("请输入任意字符");
+//	  var array1=s1.split('');//分成数组
+//	  array1.reverse();
+//	  console.log(array1);
+//	  var array2=[];//保存翻转的数组
+//	  var k=0;//
+//	  for (var i=array1.length-1;i>=0;i--) {
+//	  	array2[k]=array1[i];//存翻转后的数到新数组
+//	  	k++
+//	  }
+//	  var s2=array2.join();//连接翻转后的数组元素为字符串
+//	  console.log(s2);
+//	  var firstletter=s2.substring(0,1);//获取首字母
+//	  var firstletter=firstletter.toUpperCase();//首字母转大写
+//	  var otherletter=s2.substring(1).toLowerCase();//其他字母转小写
+//	  var res=firstletter+otherletter;//拼接首字母和其他字母
+//	  res=res.replace(/,/g,"");//替换逗号
+//	  console.log(res);//输出
+
+
+	  var s1 = prompt("请输入任意字符");
+	  var array1=s1.split('');//分成数组
+	  array1.reverse();//翻转
+	  var s2=array1.join(',');//连接翻转后的数组元素为字符串
+	  var firstletter=s2.substring(0,1);//获取首字母
+	  firstletter=firstletter.toUpperCase();
+	  var lastletter=s2.substring(s2.length-1);
+	  lastletter=lastletter.toUpperCase();
+	  var otherletter=s2.substring(1,s2.length-1).toLowerCase();//其他字母转小写
+	  var res=firstletter+otherletter+lastletter;//拼接首字母和其他字母
+	  res=res.replace(/,/g,"");//替换逗号
+	  console.log(res);
+//	  var firstletter=firstletter.toUpperCase();//首字母转大写
+//	  var otherletter=s2.substring(1).toLowerCase();//其他字母转小写
+//
+//	  var res=firstletter+otherletter;//拼接首字母和其他字母
+//	  res=res.replace(/,/g,"");//替换逗号
+//	  console.log(res);//输出
+	  
+	  
+	  
+	  
+//	  s1 = s1.toLowerCase();
+//    s1 = s1.split("");
+//    s1f = s1[0];
+//    s1fm = s1[0].toUpperCase();
+//    s2 = s1.reverse();
+//    s1l = s2[0];
+//    s1lm = s2[0].toUpperCase();
+//    s3 = s2.join();
+//    s4 = s3.replace(s1f,s1fm);
+//    s5 = s4.replace(s1l,s1lm);
+//    console.log(s5);
+
+		</script>
+		
+		<script type="text/javascript">
+			  var s1 = prompt("请输入任意字符");
+			  var array1=s1.split('');//分成数组
+			  array1.reverse();//翻转
+			  var s2=array1.join(',');//连接翻转后的数组元素为字符串
+			  var firstletter=s2.substring(0,1);//获取首字母
+			  firstletter=firstletter.toUpperCase();//首字母转大写
+			  var lastletter=s2.substring(s2.length-1);//获取最后一个字符
+			  lastletter=lastletter.toUpperCase();//最后一个字符转大写
+			  var otherletter=s2.substring(1,s2.length-1).toLowerCase();//其他字母转小写
+			  var res=firstletter+otherletter+lastletter;//拼接首字母和其他字母
+			  res=res.replace(/,/g,"");//替换逗号
+			  console.log(res);
+		</script>
+	</body>
+</html>
